@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SimonTest />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import SimonBoxes from './components/SimonBoxes.vue'
+import SimonTest from './components/SimonTest.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // SimonBoxes,
+    SimonTest,
+  },
+  data(){
+    return{
+      bufArr: [],
+      isButtonDisabled: true,
+    }
+  },
+  
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  // .game-blocker {
+  //   width: 200px;
+  //   height: 200px;
+  //   z-index: 10;
+  //   background-color: black;
+  // }
 </style>
